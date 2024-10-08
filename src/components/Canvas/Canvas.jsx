@@ -59,7 +59,7 @@ const Canvas = () => {
   };
 
   return (
-    <div ref={drop} className="canvas" style={{ position: 'relative', width: '100%', height: '500px', border: '1px solid #ccc' }}>
+    <div ref={drop} className="canvas" style={{ position: 'relative', width: '100%', height: '100vh', border: '1px solid #ccc' }}>
       {elements.map((el) => renderElement(el))}
     </div>
   );
