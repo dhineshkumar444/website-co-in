@@ -7,7 +7,7 @@ body {
 
 .app-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -35,11 +35,18 @@ body {
 }
 
 .canvas {
-  flex: 1;
   position: relative;
-  background-color: #fff;
-  border-right: 1px solid #ddd;
-  overflow: auto;
+  width: 100%;
+  height: calc(100vh - /* height of your header or other elements */);
+  background-color: #f0f0f0; /* Change this to your desired background color */
+  overflow: auto; /* To allow scrolling if the content exceeds the viewport */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .canvas {
+    height: 100vh; /* Make sure the canvas takes full height */
+  }
 }
 
 .properties-panel {
@@ -80,6 +87,7 @@ body {
 @media (max-width: 768px) {
   .app-container {
     flex-direction: column;
+    gap: 30px;
   }
   .sidebar, .properties-panel {
     width: 100%;

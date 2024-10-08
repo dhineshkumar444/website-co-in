@@ -50,6 +50,7 @@ const PropertiesPanel = () => {
         ...formData,
       },
     }));
+    dispatch(deselectElement());
   };
 
   const handleRemove = () => {
