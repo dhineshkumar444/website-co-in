@@ -170,6 +170,7 @@ const PropertiesPanel = () => {
       <h2>Properties</h2>
       <form>
         {renderForm()}
+        <div className='buttons'>
         <button
           type="button"
           onClick={handleSave}
@@ -189,7 +190,7 @@ const PropertiesPanel = () => {
           onClick={handleRemove}
           style={{
             marginTop: '20px',
-            marginLeft:"5px",
+            
             backgroundColor: 'red',
             color: '#fff',
             border: 'none',
@@ -199,6 +200,7 @@ const PropertiesPanel = () => {
         >
           Delete Element
         </button>
+        </div>
       </form>
     </div>
   );

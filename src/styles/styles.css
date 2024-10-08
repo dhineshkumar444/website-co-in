@@ -45,7 +45,7 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
   .canvas {
-    height: 100vh; /* Make sure the canvas takes full height */
+    min-height: 20vh; /* Make sure the canvas takes full height */
   }
 }
 
@@ -82,6 +82,10 @@ body {
   color: white;
   text-align: center;
   font-weight: 800;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {
